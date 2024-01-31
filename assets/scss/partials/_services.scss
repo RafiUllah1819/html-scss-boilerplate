@@ -1,0 +1,23 @@
+.services {
+  padding: 118px 0 130px;
+  
+  .item__image {
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    padding-bottom: 67.221%;
+    margin-bottom: 39px;
+  }
+
+  .item__title {
+    @include font-format(40px, 60px);
+    letter-spacing: 0.8px;
+    text-transform: uppercase;
+    margin-bottom: 23px;
+  }
+
+  .description {
+    @include font-format(27px, 32px);
+    margin-bottom: 25px;
+  }
+}

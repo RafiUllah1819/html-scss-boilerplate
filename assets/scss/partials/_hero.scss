@@ -1,0 +1,47 @@
+.hero {
+
+  h1 {
+    color: #fff;
+    text-transform: uppercase;
+  }
+
+  .cta__link {
+    @include cta_link(white);
+
+    .cta__text {
+      margin-top: -8px;
+    }
+  }
+
+  .slide__image {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+      object-position: top;
+    }
+  }
+
+  .slide__content {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+  }
+
+  .swiper {
+    .swiper-pagination {
+      @include slider_pagination(white);
+      bottom: 42px;
+    }
+  }
+}

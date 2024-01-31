@@ -1,0 +1,139 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    @include global-font;
+}
+
+a {
+    @include transition-standard;
+    color: $brand-primary;
+    text-decoration: none;
+
+    &:hover,
+    &:focus {
+        text-decoration: none;
+        color: $brand-secondary;
+    }
+}
+
+i,
+em {
+    font-style: italic;
+}
+
+b,
+strong {
+    font-weight: $fw-bold;
+}
+
+p {
+    margin-top: 0;
+    margin-bottom: 1rem;
+}
+
+button {
+    padding: 0;
+    margin: 0;
+    border: none;
+    outline: none;
+    box-shadow: none;
+    background-color: transparent;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    @include heading;
+}
+
+h1 {
+    @include h1;
+}
+
+h2 {
+    @include h2;
+}
+
+h3 {
+    @include h3;
+}
+
+h4 {
+    @include h4;
+}
+
+h5 {
+    @include h5;
+}
+
+h6 {
+    @include h6;
+}
+
+.btn {
+    @include btn
+}
+
+.icon-btn {
+    @include btn(icon)
+}
+
+.cta__link {
+    @include cta_link();
+}
+
+.cta__link--v2 {
+    @include cta_link($body-color,'v2');
+}
+
+.cta__link--v2__light {
+    @include cta_link(white,'v2');
+}
+
+.play__btn {
+    @include play_btn();
+}
+
+.container {
+    max-width: 100%;
+    width: 100%;
+    margin:  0 auto;
+    padding: 0 15px;
+
+    @include media-breakpoint-up-custom(576px) {
+        max-width: 570px;
+    }
+
+    @include media-breakpoint-up-custom(768px) {
+        max-width: 750px;
+    }
+
+    @include media-breakpoint-up-custom(992px) {
+        max-width: 990px;
+    }
+
+    @include media-breakpoint-up-custom(1200px) {
+        max-width: 1170px;
+    }
+
+    @include media-breakpoint-up-custom(1400px) {
+        max-width: 1366px;
+    }
+
+    @include media-breakpoint-up-custom(1660px) {
+        max-width: 1470px;
+    }
+
+    @include media-breakpoint-up-custom(1800px) {
+        max-width: 1667px;
+    }
+}
+
+.overflow-hidden {
+    overflow: hidden;
+}

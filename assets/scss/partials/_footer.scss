@@ -1,0 +1,45 @@
+footer {
+    padding: 105px 0 170px;
+    background-color: $body-color;
+
+    .logo {
+        max-width: 176px;
+        width: 100%;
+        margin: 0 auto 85px;
+        display: block;
+
+        img {
+            width: 100%;
+        }
+    }
+
+    .social__links {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 108px;
+
+        a {
+            display: inline-block;
+            margin: 0 22.5px;
+        }
+    }
+
+    .footer__menu {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        margin-bottom: 0;
+
+        li {
+            margin: 5px 20px;
+
+            a {
+                @include font-format(30px);
+                color: #fff;
+                font-family: $headings-font-family;
+            }
+        }
+    }
+}

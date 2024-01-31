@@ -1,0 +1,23 @@
+.banner {
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+
+  .inner {
+    min-height: 836px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .banner__logo {
+    max-width: 346px;
+    width: 100%;
+    margin: 0 auto;
+
+    img {
+      width: 100%;
+    }
+  }
+}
